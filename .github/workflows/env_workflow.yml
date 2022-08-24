@@ -6,7 +6,7 @@ on:
   # pull_request:
   #   branches: [ "master" ]
 
-  workflow_dispatch:
+  # workflow_dispatch:
 jobs:
   job1:
     runs-on: windows-latest
@@ -15,7 +15,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hey, bro!
       - name: Run a multi-line script
-        run: |
+        run: 
           echo Add other actions to build,
           echo test, and deploy your project.
   job2:
@@ -25,6 +25,6 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, siri!
       - name: Run a multi-line script
-        run: |
+        run: 
           echo this is multi-line trial,
           echo hey how you doing.
