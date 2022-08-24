@@ -1,5 +1,6 @@
 name: env_trial
-
+env:
+  Message: hello budies
 on:
   push:
     branches: [ "master" ]
@@ -13,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: echo Hey, bro!
+        run: echo $Message
       - name: Run a multi-line script
         run: 
           echo Add other actions to build,
