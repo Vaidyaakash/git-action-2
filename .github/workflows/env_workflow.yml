@@ -1,6 +1,6 @@
 name: env_trial
 env:
-  Message: hello budies
+  Message: "hello budies"
 on:
   push:
     branches: [ "master","main" ]
